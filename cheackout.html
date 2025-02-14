@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store | CheakOut</title>
+    <link rel="icon" href="imges/logo.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="top-header py-2 d-flex align-items-center  ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-4 ">
+                        <a href="">
+                            <img width="70%" src="imges/logo1.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class=" col-6 col-md-4 py-2">
+                        <input class="form-control" type="text" placeholder="اكتب اسم المنتج للبحث عنه">
+                    </div>
+                    <div class="col-md-4 left-header align-items-center d-none d-lg-flex justify-content-end ">
+                        <a data-bs-toggle="offcanvas" href="#Cart" role="button" aria-controls="offcanvasExample">
+                            <span>السلة</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+                            <span>الدخول</span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="">
+                            <span>المفضلة</span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                        <a href="cart.html">
+                            <span>مشترياتي</span>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#Cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="">
+                            <a style="color: rgb(112, 112, 112)" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الحواسيب</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الجوالات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">التاب</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الكاميرا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الاكسسوارات</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+    <!-- end header -->
+
+    <section class="bunner">
+        <h1 class="category-title">إتمام الطلب</h1>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="user-info mt-3 ">
+                        <h4 class="cheak-title">معلومات الشحن</h4>
+                        <div>
+                            <label for="" class="form-label">اسم العميل:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء إدخال الاسم">
+                        </div>
+                        <div class="mt-2">
+                            <label for="" class="form-label">البريد الإلكتروني:</label>
+                            <input type="email" class="form-control" placeholder="الرجاء إدخال البريد الإلكتروني">
+                        </div>
+                        <div class="mt-2">
+                            <label for="" class="form-label">رقم الهاتف:</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="الرجاء إدخال رقم الهاتف">
+                        </div>
+                        <div class="mt-2">
+                            <label for="" class="form-label">اسم الدولة:</label>
+                            <select class="form-select">
+                                <option selected disabled>الرجاء اختيار الدولة للشحن عليها</option>
+                                <option value="syria">سوريا</option>
+                                <option value="turkya">تركيا</option>
+                                <option value="lebanon">لبنان</option>
+                                <option value="iraq">العراق</option>
+                                <option value="sudiaarab">السعودية</option>
+                            </select>
+                        </div>
+
+
+                        <div class="mt-2">
+                            <label for="" class="form-label"> اسم المدينة:</label>
+                            <select class="form-select">
+                                <option selected disabled>الرجاء اختيار المدينة للشحن عليها</option>
+                                <option value="syria">سوريا</option>
+                                <option value="turkya">تركيا</option>
+                                <option value="lebanon">لبنان</option>
+                                <option value="iraq">العراق</option>
+                                <option value="sudiaarab">السعودية</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="" class="form-label mt-3">تفاصيل السكن:</label>
+                            <input type="text" class="form-control" placeholder="الرجاء إدخال العنوان الكامل">
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="" class="form-label">ملاحظات حول الشحن</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-6">
+                    <div class="row row-min-card row-cols-1 m-1 dash">
+
+
+
+                        <div class="col mini-card d-flex justify-content-between align-items-center p-3">
+                            <p class="cart-prouduct-title">
+                                المنتج
+                            </p>
+                            <p class="cart-prouduct-title">السعر</p>
+                            <p class="cart-prouduct-title">
+                                الكمية
+                            </p>
+                            <p class="cart-prouduct-title">الاجمالية</p>
+                        </div>
+                        <div class="col mini-card d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column gap-2">
+                                <img style="width: 90px;" src="imges/ics2.jpg" alt="">
+                                <p class="mt-2">Motorola G3</p>
+                            </div>
+
+                            <p>400$</p>
+
+                            <div class="btn-group btns-quantety-mini ">
+                                <button type="button" class="btn ">+</button>
+                                <button type="button" class="btn ">1</button>
+                                <button type="button" class="btn">-</button>
+                            </div>
+
+                            <p>1200$</p>
+                        </div>
+                        <div class="col mini-card d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column gap-2">
+                                <img style="width: 90px;" src="imges/mobile/mobile1.jpg" alt="">
+                                <p class="mt-2">Galaxy Z Flip6</p>
+                            </div>
+
+                            <p>550$</p>
+
+                            <div class="btn-group btns-quantety-mini ">
+                                <button type="button" class="btn ">+</button>
+                                <button type="button" class="btn ">1</button>
+                                <button type="button" class="btn">-</button>
+                            </div>
+
+                            <p>1100$</p>
+                        </div>
+                        <div class="col mini-card d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-column gap-2">
+                                <img style="width: 90px;" src="imges/ics1.jpg" alt="">
+                                <p class="mt-2">CO-A9</p>
+                            </div>
+
+                            <p>450$</p>
+
+                            <div class="btn-group btns-quantety-mini ">
+                                <button type="button" class="btn ">+</button>
+                                <button type="button" class="btn ">1</button>
+                                <button type="button" class="btn">-</button>
+                            </div>
+
+                            <p>900$</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="code d-flex mt-5 gap-2 mb-5">
+                            <input type="text" class="form-control w-50">
+                            <button class="btn btn-primary "> تطبيق الكوبون</button>
+                        </div>
+                        <div class="d-flex total-price align-items-center">
+                            الاجمالي:2500$
+                        </div>
+                    </div>
+
+                    <div class="payments">
+                        <div class="">
+                            <input type="radio" name="payment">
+                            <label for="" class="form-label"> الدفع باستخدام البيبال</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment">
+                            <label for="" class="form-label"> الدفع باستخدام الفيا كارد</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment">
+                            <label for="" class="form-label"> الدفع عن طريق حوالة بريدية مباشرة</label>
+                        </div>
+
+                        <div class="master-card">
+                            <h4 class="cheak-title">يمكنكم الدفع بشكل آمن عن طريق الفيزا كارد</h4>
+                            <div class="position-relative">
+                                <label for="" class="form-label labelov">رقم البطاقة:</label>
+                                <input type="text" class="form-control">
+                                <img class="position-absolute mb-5" src="imges/R.png" alt="">
+                            </div>
+                            <div class="d-flex gap-3 mt-3">
+                                <div class="w-100">
+                                    <label for="" class="form-label">تاريخ الانتهاء:</label>
+                                    <input type="text" class="form-control" placeholder="سنة/شهر">
+                                </div>
+                                <div class="w-100">
+                                    <label for="" class="form-label">رموز الامان:</label>
+                                    <input type="text" class="form-control" placeholder="CVC">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-success w-100 mt-3">إتمام الطلب</button>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- start footer -->
+    <footer>
+        <div class="container text-white">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col f1 mt-2">
+                    <img class="w-75" src="imges/logo1.png" alt="logo">
+                    <p >متجرنا يهتم دائما بايصال احدث المنتجات اليهم بسهولة وكل ما هو جميل</p>
+                    <ul class="navbar-nav link-footer">
+                        <li><i class="fa-solid fa-location-dot"></i>سوريا-إدلب</li>
+                        <li><i class="fa-solid fa-phone"></i>رقم التواصل: 09876436801</li>
+                        <li><i class="fa-solid fa-envelope"></i>@infoaboytus.com</li>
+                        
+                    </ul>
+                </div>
+                <div class="col f2 mt-2">
+                    <h3>أهم الروابط</h3>
+                    <ul class="navbar-nav foot-link">
+                        <li><a href="">الرئيسية</a></li>
+                        <li><a href="">أحدث المنتجات</a></li>
+                        <li><a href="">آخر التطورات</a></li>
+                        <li><a href="">العروض</a></li>
+                        <li><a href="">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col f3 mt-2">
+                    <h3>التصنيفات</h3>
+                    <ul class="navbar-nav foot-link">
+                        <li><a href="">جوالات</a></li>
+                        <li><a href="">لابتوبات</a></li>
+                        <li><a href="">ساعات</a></li>
+                        <li><a href="">كاميرات</a></li>
+                        <li><a href="">اكسسورات</a></li>
+                    </ul>
+                </div>
+                <div class="col f4 mt-2">
+                    <h3>النشرة البريدية</h3>
+                    <p>سارع بالمشاركة الكثير من الخصومات والهدايا للزبائن المنتظمين</p>
+                    <form action="">
+                        <input type="text" placeholder="الرجاء ادخال البريد الالكتروني" class="form-control mb-3">
+                        <button class="btn btn-secondary w-100">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-3">
+                <img src="imges/R.png" alt="">
+            </div>
+            <div class="col d-flex justify-content-center">
+                <p class="text-white text-center end-site">لمتجر السلام للأدوات الالكترونية 2025 &copy; حميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+    <!-- cart -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="Cart" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="Cart">سلة المشتريات</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row row-min-card row-cols-1">
+                <div class="col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="imges/ics1.jpg" alt="">
+                    <p class="mt-2">CO-A9 </p>
+
+                    <div class="btn-group btns-quantety-mini ">
+                        <button type="button" class="btn ">+</button>
+                        <button type="button" class="btn ">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+                <div class="col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="imges/ics2.jpg" alt="">
+                    <p class="mt-2">Motorola G3 </p>
+
+                    <div class="btn-group btns-quantety-mini ">
+                        <button type="button" class="btn ">+</button>
+                        <button type="button" class="btn ">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+                <div class="col mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="imges/ics3.jpg" alt="">
+                    <p class="mt-2">MO-Sony </p>
+                    <div class="btn-group btns-quantety-mini ">
+                        <button type="button" class="btn ">+</button>
+                        <button type="button" class="btn ">1</button>
+                        <button type="button" class="btn">-</button>
+                    </div>
+                </div>
+                <div class="gap-2">
+                    <p class="alert alert-danger p-3 my-3 text-center">مجموع المنتجات 250$ فقط لا غير</p>
+                    <button class="btn btn-secondary w-100">عرض السلة</button>
+                    <button class="btn btn-success w-100 mt-2 "><a style="color: white;" href="cheackout.html">اتمام الطلب</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--log in -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mini-login">
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">اسم المستخدم</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">كلمة المرور</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">تذكرني</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+                </form>
+                <div class="alert alert-danger my-3 text-center">
+                    <a href="">نسيت كلمة المرور؟</a>
+                </div>
+                <hr>
+                <div class="text-center mt-5">
+                    <i class="fa-regular fa-user fa-3x"></i>
+                    <p>لا يوجد لديك حساب</p>
+                    <a href="" class=" btn btn-secondary w-100 text-white">إنشاء حساب جديد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- intl-tel-input JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            initialCountry: "auto",
+            geoIpLookup: function(callback) {
+                fetch('https://ipinfo.io/json?token=<YOUR_TOKEN>', { headers: { 'Accept': 'application/json' }})
+                    .then((resp) => resp.json())
+                    .then((resp) => { callback(resp.country); })
+                    .catch(() => { callback('us'); });
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            // تفعيل خيار البحث
+            allowDropdown: true,
+            autoHideDialCode: true,
+            autoPlaceholder: "polite",
+            dropdownContainer: document.body,
+            excludeCountries: ["us"],
+            formatOnDisplay: true,
+            hiddenInput: "full_number",
+            nationalMode: true,
+            separateDialCode: true,
+            preferredCountries: ['us', 'gb', 'ca'],
+            customContainer: "intl-tel-input separate-dial-code",
+            separateDialCode: true,
+            initialCountry: "auto",
+            excludeCountries: ["af", "al"],
+            geoIpLookup: function(callback) {
+                fetch("https://ipinfo.io", {
+                    headers: { "Accept": "application/json" }
+                }).then((resp) => resp.json()).then((resp) => {
+                    const countryCode = (resp && resp.country) ? resp.country : "us";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            // إضافة البحث
+            placeholderNumberType: "MOBILE",
+            separateDialCode: true
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
