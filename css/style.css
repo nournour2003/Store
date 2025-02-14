@@ -77,6 +77,11 @@ font-weight: bold;
 .product-info p{
     font-size: 19px;
 }
+@media(max-width:768px){
+    .product-info p,.product-info h3{
+        font-size: 14px;
+    }
+}
 .stars i{
     color: yellow;
     font-size: 20px;
@@ -169,6 +174,7 @@ font-weight: bold;
     overflow: hidden !important;
     
 }
+
 .product-sm:hover img{
     rotate: 10deg;
 }
